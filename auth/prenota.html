@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../resources/css/style.css">
     <title>Centro Medico - Prenota visita</title>
 </head>
 <body>
     <header>
-        <h1>header</h1>
+        <h1>Centro Medico ITS Biotec</h1>
     </header>
 
     <nav>
@@ -27,7 +28,7 @@
             <fieldset>
                 <legend>Nuova prenotazione</legend>
 
-                <div>
+                <div class="field">
                     <label for="visite">Elenco visite prenotabili:</label>
                     <select name="visite" id="visite">
                         <option value="1">visita oculistica</option>
@@ -35,15 +36,15 @@
                         <option value="3">....</option>
                     </select>
                 </div>
-                <div>
+                <div class="field">
                     <label for="data">Data:</label>
                     <input type="datetime-local" name="data" id="data">
                 </div>
-                <div>
+                <div class="field">
                     <label for="pagato">Importo pagato</label>
                     <input type="number" name="pagato" id="pagato" min="0">
                 </div>
-                <div>
+                <div class="buttons">
                     <button>Prenota</button>
                     <button type="reset">Annulla</button>
                 </div>
