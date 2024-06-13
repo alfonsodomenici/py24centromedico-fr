@@ -62,10 +62,6 @@ ul{
     list-style: none;
 } 
 
-.logout-body{
-    background-image: url("./../images/logout.png");
-}
-
 /* forms style*/
 form{
     display: flex;
