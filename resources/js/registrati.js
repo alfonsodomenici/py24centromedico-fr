@@ -20,8 +20,16 @@ function onRegistrati(e) {
         body:JSON.stringify(user)
     }).then(response => {
         console.log(response);
+        if(response.status !== 201){
+            alert('registrazione fallita. riprova!!');
+            return
+        }
         return response.json();
     }).then(data => {
         console.log(data);
+        alert('Grazie per esserti registrato');
+        window.location='./login.html'
+    }).catch(e => {
+        alert("problemi con il server. contatta l'assistenza!!!");
     })
 }
